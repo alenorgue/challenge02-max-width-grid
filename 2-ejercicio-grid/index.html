@@ -44,12 +44,17 @@
         @media (min-width: 500px) {
             .grid-container {
                 display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
             }
         }
 
         /* Ejercicio 2: CREA una media query para que el contenoido se distribuya tal y como se espera en el diseño. Tienes que hacer que item ".news-item--important" se expanda dos columnas. Además, queremos que todo el contenedor del grid tenga como mucho 900px de ancho */
      
-        
+        @media (min-width: 900px) {
+            .grid-container { max-width: 900px;}
+            .news-item--important {grid-column: span 2;}
+        }
  
     </style>
 </head>
