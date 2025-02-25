@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   max-width: 750px;
   margin: 0 auto;
   background: #23424a;
@@ -33,7 +33,10 @@ body {
   padding: 50px 0;
 }
 
-.intro-content {
+.intro-content {max-width: 750px;
   width: 50%;
 }
+.content {max-width: 80%;
+justify-self: center;
+border: solid 1px black;}
 
